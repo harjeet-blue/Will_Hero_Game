@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../css/theme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThemeController">
+   <children>
+      <ImageView fx:id="clearSky" fitHeight="160.0" fitWidth="240.0" layoutX="60.0" layoutY="97.0" onMouseClicked="#changeThemetoClearsky" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/clouds.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Clouds" fitHeight="151.0" fitWidth="256.0" layoutX="422.0" layoutY="107.0" onMouseClicked="#changeThemetoClouds" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/bg2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="nightMode" fitHeight="160.0" fitWidth="243.0" layoutX="789.0" layoutY="99.0" onMouseClicked="#changeThemetoNightmode" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/nightmode.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beach" fitHeight="128.0" fitWidth="260.0" layoutX="58.0" layoutY="350.0" onMouseClicked="#changeThemetoBeach" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/beach.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sunSet" fitHeight="151.0" fitWidth="226.0" layoutX="436.0" layoutY="344.0" onMouseClicked="#changeThemetoSunset" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/sunset.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="evening" fitHeight="151.0" fitWidth="256.0" layoutX="789.0" layoutY="347.0" onMouseClicked="#changeThemetoEvening" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/evening.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

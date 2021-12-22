@@ -1,0 +1,5 @@
+.root {
+    -fx-background-image: url('../images/space.jpg');
+    -fx-background-size: cover;
+
+}

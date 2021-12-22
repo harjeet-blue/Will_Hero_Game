@@ -3,10 +3,16 @@ import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeUnit;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-
+import javafx.stage.Stage;
+import java.io.IOException;
+import javafx.scene.Node;
 
 public class MainPageController implements Initializable {
 
@@ -37,6 +43,10 @@ public class MainPageController implements Initializable {
     @FXML
     private ImageView leadersBoard;
 
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -71,20 +81,36 @@ public class MainPageController implements Initializable {
         mainPageAnchorePane.getChildren().add(image);
         Animmations.scale(image, 'x', 0.2, 500, 0);
         Animmations.trasnlate(image, 'x', +100, 1000, 0, true);
+        Animmations.flyup(rocket);
 
+        // while(true){
 
-        while(true){
+        //     System.out.println( image.getLayoutX() +" "+ image.getLayoutY());
+        //     try { 
 
-            System.out.println( image.getLayoutX() +" "+ image.getLayoutY());
-            try { 
+        //         TimeUnit.MILLISECONDS.sleep(500);
 
-                TimeUnit.MILLISECONDS.sleep(500);
-
-            } catch (InterruptedException e) {
+        //     } catch (InterruptedException e) {
                 
-                e.printStackTrace();
-            }
-        }
+        //         e.printStackTrace();
+        //     }
+        // }
+
+    }
+
+    @FXML
+    void printCo(MouseEvent event) throws IOException{
+
+        // System.out.println(PlayButton.getX()+" "+PlayButton.getY());
+        // System.out.println(PlayButton.getTranslateX()+" "+PlayButton.getTranslateY());
+        // //System.out.println(PlayButton.translateXProperty()+" "+PlayButton.translateYProperty());
+        // System.out.println(PlayButton.getLayoutX()+" "+PlayButton.getLayoutY());
+        // System.out.println(PlayButton.getFitHeight()+" "+PlayButton.getFitWidth());
+        root = FXMLLoader.load(getClass().getResource("Themes.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root, 1100, 600);
+        stage.setScene(scene);
+        stage.show();
 
     }
 

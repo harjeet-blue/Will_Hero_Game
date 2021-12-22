@@ -1,6 +1,5 @@
 // package willHero;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +12,6 @@ import javafx.scene.layout.AnchorPane;
 
 
 public class App extends Application {
-
 
     public static void main(String[] args) {
         launch(args);
@@ -43,6 +41,7 @@ public class App extends Application {
 
             // AnchorPane rootanchor =((AnchorPane) root);
             // rootanchor.getChildren().add(image);
+            //rootanchor.setStyle("-fx-background-image: url('pic/bg2.jpg');");
 
             primaryStage.setTitle("Will Hero");
             primaryStage.setScene(scene);

@@ -30,7 +30,7 @@ public class Animmations {
             translate.setCycleCount(TranslateTransition.INDEFINITE);
         }
         translate.play();
-
+        
     }
 
     public static void scale(Node node, char c, double amt, double dur, double del) {
