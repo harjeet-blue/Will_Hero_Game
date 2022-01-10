@@ -4,7 +4,7 @@ Welcome to the VS Code Java world. Here is a guideline to help you get started t
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+The workspace contains these folders, where:
 
 - `src`: the folder to maintain sources  ( has all the .java and .fxml files)
 - `lib`: the folder to maintain dependencies 
