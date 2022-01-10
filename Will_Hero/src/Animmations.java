@@ -30,7 +30,7 @@ public class Animmations {
             translate.setCycleCount(TranslateTransition.INDEFINITE);
         }
         translate.play();
-        
+
     }
 
     public static void scale(Node node, char c, double amt, double dur, double del) {
@@ -83,6 +83,8 @@ public class Animmations {
         RotateTransition rotate = new RotateTransition();
         rotate.setNode(node);
         rotate.setByAngle(angle);
+       // rotate.axisProperty();
+        
         rotate.setInterpolator(Interpolator.LINEAR);
         rotate.setCycleCount(RotateTransition.INDEFINITE);
         rotate.setDuration(Duration.millis(500));
