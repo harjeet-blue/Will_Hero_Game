@@ -1,3 +1,5 @@
+
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -9,7 +11,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import java.io.IOException;
 import javafx.scene.Node;
 
 public class MainPageController implements Initializable {
@@ -39,7 +40,13 @@ public class MainPageController implements Initializable {
     private ImageView axe;
 
     @FXML
+    private ImageView axe2;
+
+    @FXML
     private ImageView leadersBoard;
+
+    @FXML
+    private ImageView mainlogo;
 
     private Stage stage;
     private Scene scene;
@@ -55,6 +62,9 @@ public class MainPageController implements Initializable {
         Animmations.trasnlate(leadersBoard, 'x', 800, 2000, 5, false);
         Animmations.trasnlate(axe, 'x', 1000, 1450, 5, false);
 
+        Animmations.trasnlate(axe2, 'x', -1100, 1450, 6, false);
+        Animmations.trasnlate(mainlogo, 'x', -851, 1450, 6, false);
+
 
         Animmations.fadein(gameName, 1.0, 2.0, 4.0);
         Animmations.fadein(PlayButton, 1.0, 2.0, 4.0);
@@ -62,44 +72,33 @@ public class MainPageController implements Initializable {
 
         Animmations.flyup(rocket);
 
-        Animmations.scale(willHero, 'y', 0.2, 1100, 0);
+       // Animmations.scale(willHero, 'y', 0.2, 1100, 0);
         Animmations.scale(gameName, 'x', 0.2, 500, 0);
         Animmations.scale(PlayButton, 'x', 0.2, 500, 1000);
         Animmations.scale(settings, 'x', 0.2, 500, 1000);
         Animmations.scale(leadersBoard, 'x', 0.2, 500, 1000);
 
         Animmations.rotate(axe, 360);
+        Animmations.rotate(axe2, -360);
         
-        ImageView  image = new ImageView("pic/Islands1.png");
-        image.setX(28);
-        image.setY(388);
-        image.setFitHeight(50);
-        image.setFitWidth(50);
-        //image.setPreserveRatio(true);
-        mainPageAnchorePane.getChildren().add(image);
-        // Animmations.scale(image, 'x', 0.2, 500, 0);
-        // Animmations.trasnlate(image, 'x', +100, 1000, 0, true);
-        Animmations.flyup(rocket);
-        
-        // while(true){
+    }
 
-        //     System.out.println( image.getLayoutX() +" "+ image.getLayoutY());
-        //     try { 
+    @FXML 
+    void playGame (MouseEvent event) throws IOException, ClassNotFoundException{
 
-        //         TimeUnit.MILLISECONDS.sleep(500);
 
-        //     } catch (InterruptedException e) {
-                
-        //         e.printStackTrace();
-        //     }
-        // }
+        root = FXMLLoader.load(getClass().getResource("Record.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root, 1100, 600);
+        stage.setScene(scene);
+        stage.show();
 
     }
 
-    @FXML
-    void printCo(MouseEvent event) throws IOException{
-
-        root = FXMLLoader.load(getClass().getResource("Themes.fxml"));
+    @FXML 
+    void LoadGames (MouseEvent event) throws IOException{
+    
+        root = FXMLLoader.load(getClass().getResource("LoadGame.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root, 1100, 600);
         stage.setScene(scene);
