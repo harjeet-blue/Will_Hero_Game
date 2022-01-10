@@ -1,13 +1,5 @@
 .root {
-    -fx-background-image: url('../images/space.jpg');
+    -fx-background-image: url('../images/background.jpg');
     -fx-background-size: cover;
-
-}
-
-#Clouds{
-	-fx-border-style: solid;
-}
-.ImageView{
-	-fx-border-style: solid;
 
 }
