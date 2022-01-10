@@ -26,7 +26,7 @@ public class App extends Application {
         ObjectOutputStream out=null;
 
         try {
-            out = new ObjectOutputStream (new FileOutputStream("Datafile.txt"));
+            out = new ObjectOutputStream (new FileOutputStream("lib/savedgame.txt"));
             out.writeObject(dList);
         }
         finally {
@@ -40,7 +40,7 @@ public class App extends Application {
         ObjectInputStream in = null;
         try {
             
-            in=new ObjectInputStream (new FileInputStream("Datafile.txt"));
+            in=new ObjectInputStream (new FileInputStream("lib/savedgame.txt"));
             dList=(DatabaseList)in.readObject();
             in.close();
         }
@@ -63,7 +63,6 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        //dList = new DatabaseList();
 
         try {
 
