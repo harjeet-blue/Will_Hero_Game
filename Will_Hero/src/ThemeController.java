@@ -22,16 +22,46 @@ public class ThemeController implements Initializable{
     private ImageView beach;
 
     @FXML
+    private ImageView beachlogo;
+
+    @FXML
+    private ImageView chooselogo;
+
+    @FXML
     private ImageView clearSky;
+
+    @FXML
+    private ImageView clearskylogo;
+
+    @FXML
+    private ImageView cloudslogo;
 
     @FXML
     private ImageView evening;
 
     @FXML
+    private ImageView eveninglogo;
+
+    @FXML
     private ImageView nightMode;
 
     @FXML
+    private ImageView nightmodelogo;
+
+    @FXML
     private ImageView sunSet;
+
+    @FXML
+    private ImageView sunsetlogo;
+
+    @FXML
+    private ImageView themeslogo;
+
+    @FXML
+    private ImageView axe;
+
+    @FXML
+    private ImageView rocket;
 
     private Stage stage;
     private Scene scene;
@@ -85,7 +115,7 @@ public class ThemeController implements Initializable{
 
         AnchorPane rootanchor =((AnchorPane) root);
         rootanchor.setStyle(theme);
-
+        App.db.setTheme(theme);
         stage.setScene(scene);
         stage.show();
 
@@ -94,7 +124,28 @@ public class ThemeController implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        Clouds.setStyle("-fx-border-style: solid; -fx-border-color: red; -fx-border-width: 5px;");
+        Animmations.trasnlate(chooselogo, 'x', 550, 1500, 4, false);
+        Animmations.trasnlate(themeslogo, 'x', -550, 1500, 4, false);
+
+        Animmations.trasnlate(beach, 'x', -1187, 2000, 2, false);
+        Animmations.trasnlate(sunSet, 'x', -1169, 2000, 2, false);
+        Animmations.trasnlate(evening, 'x', -1131, 2000, 2, false);
+        Animmations.trasnlate(rocket, 'x', -1220, 2000, 2, false);
+
+        Animmations.rotate(axe, 360);
+        Animmations.trasnlate(axe, 'x', 1200, 2000, 2, false);
+        Animmations.trasnlate(clearSky, 'x', 1092, 2000, 2, false);
+        Animmations.trasnlate(Clouds, 'x', 1122, 2000, 2, false);
+        Animmations.trasnlate(nightMode, 'x', 1169, 2000, 2, false);
+        
+
+        Animmations.scale(clearskylogo, 'x', 0.1, 500, 0);
+        Animmations.scale(cloudslogo, 'x', 0.1, 500, 0);
+        Animmations.scale(beachlogo, 'x', 0.1, 500, 0);
+        Animmations.scale(eveninglogo, 'x', 0.1, 500, 0);
+        Animmations.scale(sunsetlogo, 'x', 0.1, 500, 0);
+        Animmations.scale(nightmodelogo, 'x', 0.1, 500, 0);
+        
         
     }
 
