@@ -4,7 +4,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../css/theme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThemeController">
    <children>
       <ImageView fx:id="clearSky" fitHeight="160.0" fitWidth="240.0" layoutX="60.0" layoutY="97.0" onMouseClicked="#changeThemetoClearsky" pickOnBounds="true" preserveRatio="true">
@@ -12,7 +11,7 @@
             <Image url="@pic/clouds.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="Clouds" fitHeight="151.0" fitWidth="256.0" layoutX="422.0" layoutY="107.0" onMouseClicked="#changeThemetoClouds" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="Clouds" fitHeight="151.0" fitWidth="256.0" layoutX="423.0" layoutY="107.0" onMouseClicked="#changeThemetoClouds" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pic/bg2.jpg" />
          </image>
@@ -35,6 +34,36 @@
       <ImageView fx:id="evening" fitHeight="151.0" fitWidth="256.0" layoutX="789.0" layoutY="347.0" onMouseClicked="#changeThemetoEvening" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pic/evening.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="114.0" fitWidth="200.0" layoutX="67.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../JavaFXprojects/Will_Hero%20(3)/Will_Hero%20(1)/Will_Hero/src/pic/clearskylogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="181.0" layoutX="464.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../JavaFXprojects/Will_Hero%20(3)/Will_Hero%20(1)/Will_Hero/src/pic/cloudslogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="219.0" layoutX="803.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../JavaFXprojects/Will_Hero%20(3)/Will_Hero%20(1)/Will_Hero/src/pic/nightmodelogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../JavaFXprojects/Will_Hero%20(3)/Will_Hero%20(1)/Will_Hero/src/pic/beachlogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="449.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../JavaFXprojects/Will_Hero%20(3)/Will_Hero%20(1)/Will_Hero/src/pic/sunsetlogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="817.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../JavaFXprojects/Will_Hero%20(3)/Will_Hero%20(1)/Will_Hero/src/pic/eveninglogo.png" />
          </image>
       </ImageView>
    </children>

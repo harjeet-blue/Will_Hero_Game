@@ -3,3 +3,11 @@
     -fx-background-size: cover;
 
 }
+
+#Clouds{
+	-fx-border-style: solid;
+}
+.ImageView{
+	-fx-border-style: solid;
+
+}

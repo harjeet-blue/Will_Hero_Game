@@ -7,8 +7,9 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
+
+// import javafx.scene.image.ImageView;
+// import javafx.scene.layout.AnchorPane;
 
 
 public class App extends Application {
@@ -22,7 +23,7 @@ public class App extends Application {
 
         try {
 
-            Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("GamePlay.fxml"));
 
             // File directory = new File("./");
             // System.out.println(directory.getAbsolutePath());
@@ -51,7 +52,7 @@ public class App extends Application {
         } catch (Exception e) {
 
             System.out.println(e.getMessage());
-
+            //System.out.println("jrmklm");
         }
         
     }
