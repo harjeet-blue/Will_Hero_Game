@@ -26,7 +26,7 @@ public class App extends Application {
         ObjectOutputStream out=null;
 
         try {
-            out = new ObjectOutputStream (new FileOutputStream("lib/savedgame.txt"));
+            out = new ObjectOutputStream (new FileOutputStream("SavedGames/savedgame.txt"));
             out.writeObject(dList);
         }
         finally {
@@ -40,7 +40,7 @@ public class App extends Application {
         ObjectInputStream in = null;
         try {
             
-            in=new ObjectInputStream (new FileInputStream("lib/savedgame.txt"));
+            in=new ObjectInputStream (new FileInputStream("SavedGames/savedgame.txt"));
             dList=(DatabaseList)in.readObject();
             in.close();
         }
