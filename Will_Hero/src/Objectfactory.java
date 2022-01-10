@@ -7,15 +7,8 @@ public class Objectfactory {
     private int min,max;
     private ImageView coin = null;
     private ImageView chest = null;
-
-    public Objectfactory(){
-
-        prev = 0;
-        coin = new ImageView("pic/coin");
-        coin.setFitHeight(30);
-        coin.setFitWidth(30);
-
-    }
+    private ImageView orc = null;
+    private ImageView tnt = null;
     public ImageView createImage(int x, int y, int h,int w,String path){
         img = new ImageView(path);
         img.setX(x);
@@ -27,7 +20,7 @@ public class Objectfactory {
 
     public void generateImage(int n){
 
-        switch (n){
+        switch (n) {
 
             // case 1: img = new ImageView("pic/greenIsland1.png");
             //         img.setFitHeight(182);
@@ -44,19 +37,19 @@ public class Objectfactory {
                     img.setFitWidth(263);
                     img.setY(450);
                 break;
-            // case 4: img = new ImageView("pic/Island-7.png");
-            //         img.setFitHeight(212);
-            //         img.setFitWidth(143);
+            // case 4: img = new ImageView("pic/redIsland6.png");
+            //         img.setFitHeight(143);
+            //         img.setFitWidth(212);
             //         img.setY(283);
             //     break;
-            // case 5: img = new ImageView("pic/greenIsland7.png");
-            //         img.setFitHeight(238);
-            //         img.setFitWidth(204);
+            // case 5: img = new ImageView("pic/redIsland1.png");
+            //         img.setFitHeight(135);
+            //         img.setFitWidth(198);
             //         img.setY(265);
             //     break;
             case 3: img = new ImageView("pic/greenIsland6.png");
-                    img.setFitHeight(187);
-                    img.setFitWidth(193);
+                    img.setFitHeight(130);
+                    img.setFitWidth(180);
                     img.setY(300);
                 break;
             // case 7: img = new ImageView("pic/Island-8.png");
@@ -80,17 +73,32 @@ public class Objectfactory {
         }
 
     }   
-
+    public void generateOrc(int n){
+        switch (n) {
+        case 1: orc = new ImageView("pic/Standard_Red_Orc.png");
+                    orc.setFitHeight(48);
+                    orc.setFitWidth(65);
+                break;
+        case 2: orc = new ImageView("pic/Standard_Green_Orc.png");
+                    orc.setFitHeight(48);
+                    orc.setFitWidth(65);
+                break;
+        default:
+                break;
+        }
+    }
     public void generateChest(int n){
 
         switch (n) {
-            case 1: chest = new ImageView("pic/coinChest.jpg");
+            case 1: chest = new ImageView("pic/pinkchest.jpg");
                     chest.setFitHeight(48);
                     chest.setFitWidth(65);
                 break;
             case 2: chest = new ImageView("pic/Weapon_Chest.png");
                     chest.setFitHeight(50);
                     chest.setFitWidth(60);
+                break;
+            
             default:
                 break;
         }
@@ -104,7 +112,32 @@ public class Objectfactory {
         chest.setY(y);
         return chest;
     }
-    
+    public ImageView getOrc(double x, double y){
+
+        int n = (int)Math.floor(Math.random()*(2-1+1)+1);
+        generateOrc(n);
+        orc.setX(x);
+        orc.setY(y);
+        return orc;
+    }
+    public ImageView getTNT(double x, double y){
+
+        tnt = new ImageView("pic/TNT.png");
+        tnt.setFitHeight(60);
+        tnt.setFitWidth(50);
+        tnt.setX(x);
+        tnt.setX(y);
+
+        return tnt;
+    }
+    public ImageView getBoss(double x,double y){
+        ImageView boss = new ImageView("pic/Boss.png");
+        boss.setFitHeight(195);
+        boss.setFitWidth(180);
+        boss.setX(x);
+        boss.setY(y);
+        return boss;
+    }
     public ImageView getCoin(double x, double y){
 
         coin = new ImageView("pic/Coin.png");
@@ -118,20 +151,17 @@ public class Objectfactory {
 
     public ImageView getImgage(int x, int y){
         int n;
-
         min =1; max =3;
 
         do {
             n = (int)Math.floor(Math.random()*(max-min+1)+min);
 
         } while (prev==n);
-
         prev = n;
         generateImage(n);
-
-        
         img.setX(x);
         img.setY(y);
+        //img.setPreserveRatio(true);
 
         return img;
     }
