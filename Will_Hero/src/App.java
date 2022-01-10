@@ -1,48 +1,78 @@
-// package willHero;
-
-import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-
-// import javafx.scene.image.ImageView;
-// import javafx.scene.layout.AnchorPane;
-
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 public class App extends Application {
+
+    static Database db;
+    static DatabaseList dList;
+    static String currentUser;
 
     public static void main(String[] args) {
         launch(args);
     }
 
+    public static void serialize() throws IOException {
+
+        ObjectOutputStream out=null;
+
+        try {
+            out = new ObjectOutputStream (new FileOutputStream("Datafile.txt"));
+            out.writeObject(dList);
+        }
+        finally {
+            out.close();
+            
+        }
+        
+    }
+    
+    public static void deserialize() throws ClassNotFoundException, FileNotFoundException, IOException {
+        ObjectInputStream in = null;
+        try {
+            
+            in=new ObjectInputStream (new FileInputStream("Datafile.txt"));
+            dList=(DatabaseList)in.readObject();
+            in.close();
+        }
+        catch (FileNotFoundException e){
+            dList=new DatabaseList();
+        }
+        catch (NullPointerException e) {
+            dList=new DatabaseList();
+            
+        }
+        catch(ClassNotFoundException e){
+            dList=new DatabaseList();
+        }
+        catch(Exception e){
+            dList=new DatabaseList();
+        }
+
+    }
+
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) throws Exception {
+
+        //dList = new DatabaseList();
 
         try {
 
-            Parent root = FXMLLoader.load(getClass().getResource("GamePlay.fxml"));
-
-            // File directory = new File("./");
-            // System.out.println(directory.getAbsolutePath());
+            deserialize();
+            
+            Parent root = FXMLLoader.load(getClass().getResource("Mainpage.fxml"));
             Image icon = new Image("pic/Will.png");
-          
             primaryStage.getIcons().add(icon);
-
             Scene scene = new Scene(root, 1100, 600);
-
-            // ImageView  image = new ImageView("pic/Will.png");
-            // image.setX(20);
-            // image.setY(20);
-            // image.setFitHeight(50);
-            // image.setFitWidth(50);
-            // image.setPreserveRatio(true);
-
-            // AnchorPane rootanchor =((AnchorPane) root);
-            // rootanchor.getChildren().add(image);
-            //rootanchor.setStyle("-fx-background-image: url('pic/bg2.jpg');");
 
             primaryStage.setTitle("Will Hero");
             primaryStage.setScene(scene);
@@ -52,11 +82,10 @@ public class App extends Application {
         } catch (Exception e) {
 
             System.out.println(e.getMessage());
-            //System.out.println("jrmklm");
+
         }
         
+    
     }
 
 }
-
-
