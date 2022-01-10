@@ -6,9 +6,12 @@ Welcome to the VS Code Java world. Here is a guideline to help you get started t
 
 The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
+- `src`: the folder to maintain sources  ( has all the .java and .fxml files)
+- `lib`: the folder to maintain dependencies 
+- `images`: the folder to store all the images
+- `SavedGames`: the folder to store the savedgames ( during serialization )
+- `css`: the folder to maintain all css files
+- `bin`: the folder maintain binary or exe files (not to worry about this floder only contains compiles files)
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
