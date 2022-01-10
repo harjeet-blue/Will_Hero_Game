@@ -64,9 +64,9 @@ public class CAnimations {
         if (d == 1) {
             tt.setCycleCount(TranslateTransition.INDEFINITE);
         }
-
+    
         tt.setAutoReverse(true);
-
+        
         if (c == 'y')
             tt.setByY(amt);
         else if (c == 'x')
