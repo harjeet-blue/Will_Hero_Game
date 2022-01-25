@@ -1,7 +1,10 @@
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -11,11 +14,20 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 
 
-public class GameOver {
+public class GameOver implements Initializable{
 
     private Stage stage;
     private Scene scene;
     private Parent root;
+
+    @FXML
+    private AnchorPane GameOverAp;
+
+    @FXML
+    private ImageView axe1;
+
+    @FXML
+    private ImageView axe2;
 
     @FXML
     private ImageView menu;
@@ -25,8 +37,10 @@ public class GameOver {
 
     @FXML
     private ImageView resurrect;
+
     @FXML
-    private AnchorPane GameOverAp;
+    private ImageView will;
+
 
     @FXML
     void exit(MouseEvent event) {
@@ -106,6 +120,20 @@ public class GameOver {
         stage.setScene(new Scene(root, 1100, 600));
         stage.show();
 
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+        Animmations.rotate(axe1, 360);
+        Animmations.rotate(axe2, -360);
+
+        // Animmations.scale(menu, 'x', 0.2, 500, 0);
+        // Animmations.scale(quit, 'x', 0.2, 500, 1000);
+        // Animmations.scale(resurrect, 'x', 0.2, 500, 1000);
+
+        Animmations.trasnlate(will, 'y', -130, 1100, 0, true);
+        
     }
 }
 

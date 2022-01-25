@@ -68,7 +68,7 @@ public class App extends Application {
 
             deserialize();
             
-            Parent root = FXMLLoader.load(getClass().getResource("Mainpage.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("GameOver.fxml"));
             Image icon = new Image("pic/Will.png");
             primaryStage.getIcons().add(icon);
             Scene scene = new Scene(root, 1100, 600);
