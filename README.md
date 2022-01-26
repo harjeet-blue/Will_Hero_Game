@@ -21,3 +21,12 @@ Java, JavaFX, CSS
 - You have to dash over floating islands and dodge monsters along the way. Timing is crucial for survival.
 - As you progress through the level, you'll encounter monsters
 - You'll be collecting weapons and coins as you go along. You can use weapons to kill the monsters and increase your score.
+
+## Dependencies
+- JDK 16 or higher | [Download](https://www.oracle.com/in/java/technologies/javase-jdk15-downloads.html)
+
+- JavaFX-sdk-17.0.1 or higher | [Download](https://gluonhq.com/products/javafx/)
+
+- Git | [Download](https://git-scm.com/downloads)
+
+## In-Game Snapshots
