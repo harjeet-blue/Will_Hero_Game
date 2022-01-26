@@ -31,29 +31,29 @@ Java, JavaFX, CSS
 
 ## In-Game Snapshots
 
-###Welcome/Username###
+###Welcome/Username
 ![Welcome](Will_Hero/images/welcome.gif)
 
-###Chose Theme###
+###Chose Theme
 ![Welcome](Will_Hero/images/theme.gif)
 
 
-###Game Play###
+###Game Play
 ![Welcome](Will_Hero/images/actualgame.gif)
 
-###Dark Theme###
+###Dark Theme
 ![Welcome](Will_Hero/images/darkmode.gif)
 
 
-###Save/Resume###
+###Save/Resume
 ![Welcome](Will_Hero/images/resume.gif)
 
-###Resurrection###
+###Resurrection
 ![Welcome](Will_Hero/images/resurrect.png)
 
-###Loading Saved Games###
+###Loading Saved Games
 ![Welcome](Will_Hero/images/savedgame.gif)
 
-##Author##
+##Author
 **Harjeet Singh Yadav** 
 -[Github](https://github.com/harjeet-blue)
