@@ -7,7 +7,7 @@ Java, JavaFX, CSS
 
 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](Will_Hero/images/game.gif)
 
 ## Implementation Details
 - The UI/UX of the game has been designed using JavaFX
