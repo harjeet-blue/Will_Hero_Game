@@ -9,14 +9,14 @@ Java, JavaFX, CSS
 
 ![App Screenshot](Will_Hero/images/game.gif)
 
-## Implementation Details
+## Implementation Details:-
 - The UI/UX of the game has been designed using JavaFX
 - Utilised CSS styling for the game background
 - Utilised Animation Timer, Traslation and Timeline classes from java libarary for adding cool animations
 - Utilised Serializable interface, and Serializaion/deserialization concepts for saving and loading the games 
 - Heavy usage of java event Handling classes to handle mouse and keyboard input
 
-## Game Objecive-
+## Game Objecive:-
 - The primary aim of Will Hero is to keep moving and survive. Keep clicking to dash sideways
 - You have to dash over floating islands and dodge monsters along the way. Timing is crucial for survival.
 - As you progress through the level, you'll encounter monsters
@@ -30,3 +30,30 @@ Java, JavaFX, CSS
 - Git | [Download](https://git-scm.com/downloads)
 
 ## In-Game Snapshots
+
+###Welcome/Username###
+![Welcome](Will_Hero/images/welcome.gif)
+
+###Chose Theme###
+![Welcome](Will_Hero/images/theme.gif)
+
+
+###Game Play###
+![Welcome](Will_Hero/images/actualgame.gif)
+
+###Dark Theme###
+![Welcome](Will_Hero/images/darkmode.gif)
+
+
+###Save/Resume###
+![Welcome](Will_Hero/images/resume.gif)
+
+###Resurrection###
+![Welcome](Will_Hero/images/resurrect.png)
+
+###Loading Saved Games###
+![Welcome](Will_Hero/images/savedgame.gif)
+
+##Author##
+**Harjeet Singh Yadav** 
+-[Github](https://github.com/harjeet-blue)
