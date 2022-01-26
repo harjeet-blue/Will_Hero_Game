@@ -66,7 +66,7 @@ public class App extends Application {
 
         try {
 
-            deserialize();
+            //deserialize();
             
             Parent root = FXMLLoader.load(getClass().getResource("GameOver.fxml"));
             Image icon = new Image("pic/Will.png");
