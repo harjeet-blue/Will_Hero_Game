@@ -72,7 +72,7 @@ public class MainPageController implements Initializable {
 
         Animmations.flyup(rocket);
 
-       // Animmations.scale(willHero, 'y', 0.2, 1100, 0);
+        Animmations.scale(willHero, 'y', 0.2, 1100, 0);
         Animmations.scale(gameName, 'x', 0.2, 500, 0);
         Animmations.scale(PlayButton, 'x', 0.2, 500, 1000);
         Animmations.scale(settings, 'x', 0.2, 500, 1000);
@@ -99,6 +99,17 @@ public class MainPageController implements Initializable {
     void LoadGames (MouseEvent event) throws IOException{
     
         root = FXMLLoader.load(getClass().getResource("LoadGame.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root, 1100, 600);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    @FXML
+    void changeWill(MouseEvent event) throws IOException{
+        
+        root = FXMLLoader.load(getClass().getResource("CustomWill.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root, 1100, 600);
         stage.setScene(scene);

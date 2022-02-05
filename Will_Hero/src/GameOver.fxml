@@ -11,12 +11,12 @@
             <Image url="@pic/greenIsland1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="quit" fitHeight="119.0" fitWidth="144.0" layoutX="687.0" layoutY="145.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="quit" fitHeight="119.0" fitWidth="144.0" layoutX="1150.0" layoutY="145.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pic/Quit.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="menu" fitHeight="123.0" fitWidth="134.0" layoutX="499.0" layoutY="145.0" onMouseClicked="#menu" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="menu" fitHeight="123.0" fitWidth="134.0" layoutX="499.0" layoutY="610.0" onMouseClicked="#menu" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pic/MainMenu.png" />
          </image>
@@ -26,7 +26,7 @@
             <Image url="@pic/Island1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="resurrect" fitHeight="119.0" fitWidth="113.0" layoutX="315.0" layoutY="145.0" onMouseClicked="#resurrect" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="resurrect" fitHeight="119.0" fitWidth="113.0" layoutX="-150.0" layoutY="145.0" onMouseClicked="#resurrect" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pic/Resurrect.png" />
          </image>

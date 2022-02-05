@@ -1,10 +1,9 @@
 
 # Will-Hero Game
 
-This is replica of Will Hero mobile Game, implemented using 
-Java, JavaFX, CSS
+**This is replica of Will Hero mobile Game, implemented using Java, JavaFX, CSS**
 
-![Game](Will_Hero/images/game.gif)
+- ![Game](Will_Hero/images/game.gif)
 
 ## Implementation Details:-
 - The UI/UX of the game has been designed using JavaFX
@@ -29,28 +28,45 @@ Java, JavaFX, CSS
 ## In-Game Snapshots
 
 ### Welcome/Username
-![Welcome](Will_Hero/images/welcome.gif)
+- ![Welcome](Will_Hero/images/welcome.gif)
 
-### Chose Theme
-![Welcome](Will_Hero/images/theme.gif)
+### Choose Theme
+- ![Welcome](Will_Hero/images/theme.gif)
 
+### Choose Avatar
+- ![Welcome](Will_Hero/images/avatar.gif)
 
 ### Game Play
-![Welcome](Will_Hero/images/actualgame.gif)
+- ![Welcome](Will_Hero/images/actualgame.gif)
 
 ### Dark Theme
-![Welcome](Will_Hero/images/darkmode.gif)
+- ![Welcome](Will_Hero/images/darkmode.gif)
 
+### Evening Theme
+- ![Welcome](Will_Hero/images/evening.gif)
 
-### Save/Resume
-![Welcome](Will_Hero/images/resume.gif)
+### Beach Theme
+- ![Welcome](Will_Hero/images/beach.gif)
+
+### Sunset Theme
+- ![Welcome](Will_Hero/images/sunset.gif)
+
+### Resume
+- ![Welcome](Will_Hero/images/resume2.gif)
+
+### Save
+- ![Welcome](Will_Hero/images/save.gif)
 
 ### Resurrection
-![Welcome](Will_Hero/images/resurrect.png)
+- ![Welcome](Will_Hero/images/resurrect.gif)
 
 ### Loading Saved Games
-![Welcome](Will_Hero/images/savedgame.gif)
+- ![Welcome](Will_Hero/images/savedgame.gif)
+
+
 
 ## Author
 **Harjeet Singh Yadav** 
--[Github](https://github.com/harjeet-blue)
+- [GitHub](https://github.com/harjeet-blue)
+- [Email](harjeet20561@iiitd.ac.in)
+

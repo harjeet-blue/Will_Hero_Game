@@ -92,4 +92,20 @@ public class Animmations {
 
     }
 
+    public static void rotateTimes(Node node, double angle, int cnt, double del, double dur) {
+
+        RotateTransition rotate = new RotateTransition();
+        rotate.setNode(node);
+        rotate.setByAngle(angle);
+       
+        
+        rotate.setInterpolator(Interpolator.LINEAR);
+        rotate.setDelay(Duration.seconds(del));
+        rotate.setCycleCount(cnt);
+        rotate.setDuration(Duration.millis(dur));
+        rotate.play();
+
+    }
+
+
 }

@@ -61,7 +61,7 @@
                 <Image url="@../images/Leaderboard.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="settings" fitHeight="51.0" fitWidth="52.0" layoutX="-377.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="settings" fitHeight="51.0" fitWidth="52.0" layoutX="-377.0" layoutY="279.0" onMouseClicked="#changeWill" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/Settings.png" />
             </image>

@@ -128,11 +128,21 @@ public class GameOver implements Initializable{
         Animmations.rotate(axe1, 360);
         Animmations.rotate(axe2, -360);
 
-        // Animmations.scale(menu, 'x', 0.2, 500, 0);
-        // Animmations.scale(quit, 'x', 0.2, 500, 1000);
-        // Animmations.scale(resurrect, 'x', 0.2, 500, 1000);
+        Animmations.trasnlate(menu, 'y', -465, 1500, 1.5, false);
+        Animmations.trasnlate(quit, 'x', -463, 1500, 1.5, false);
+        Animmations.trasnlate(resurrect, 'x', +465, 1500, 1.5, false);
+        
+        Animmations.rotateTimes(menu, +360, 1, 3, 1200);
+        Animmations.rotateTimes(quit, +360, 1, 3, 1200);
+        Animmations.rotateTimes(resurrect, +360, 1, 3, 1200);
+
+        Animmations.rotateTimes(menu, -360, 1, 4.5, 1200);
+        Animmations.rotateTimes(quit, -360, 1, 4.5, 1200);
+        Animmations.rotateTimes(resurrect, -360, 1, 4.5, 1200);
+
 
         Animmations.trasnlate(will, 'y', -130, 1100, 0, true);
+
         
     }
 }

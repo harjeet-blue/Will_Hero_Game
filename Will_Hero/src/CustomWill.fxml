@@ -4,42 +4,61 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../css/theme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomWill">
+<AnchorPane fx:id="AvatarAp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../css/theme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomWill">
    <children>
-      <ImageView fx:id="pig" fitHeight="150.0" fitWidth="200.0" layoutX="486.0" layoutY="211.0" onMouseClicked="#PigWill" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="will1" fitHeight="135.0" fitWidth="119.0" layoutX="-150.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/My%20project%20(1).png" />
+            <Image url="@pic/Will5.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="racoon" fitHeight="211.0" fitWidth="207.0" layoutX="167.0" layoutY="170.0" onMouseClicked="#raccoonWill" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="will7" fitHeight="100.0" fitWidth="94.0" layoutX="620.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/My%20project%20(2).png" />
+            <Image url="@pic/Will4.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="bird" fitHeight="183.0" fitWidth="178.0" layoutX="196.0" layoutY="377.0" onMouseClicked="#birdWill" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="will3" fitHeight="100.0" fitWidth="100.0" layoutX="614.0" layoutY="-110.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/My%20project%20(3).png" />
+            <Image url="@pic/Will6.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="angel" fitHeight="170.0" fitWidth="191.0" layoutX="455.0" layoutY="402.0" onMouseClicked="#angelWill" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="will5" fitHeight="100.0" fitWidth="94.0" layoutX="-100.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/My%20project%20(4)%20(1).png" />
+            <Image url="@pic/Will2.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="bull" fitHeight="150.0" fitWidth="200.0" layoutX="684.0" layoutY="217.0" onMouseClicked="#bullWill" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="will6" fitHeight="100.0" fitWidth="104.0" layoutX="374.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/My%20project%20(5).png" />
+            <Image url="@pic/Will3.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="evil" fitHeight="150.0" fitWidth="200.0" layoutX="723.0" layoutY="402.0" onMouseClicked="#evilWill" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="will2" fitHeight="134.0" fitWidth="125.0" layoutX="361.0" layoutY="-150.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/My%20project%20(7).png" />
+            <Image url="@pic/Will7.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="168.0" fitWidth="674.0" layoutX="196.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="avatar" fitHeight="168.0" fitWidth="388.0" layoutX="371.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/WillPic.png" />
+            <Image url="@../images/avatar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="41.0" layoutX="17.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Tree1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="56.0" layoutX="1039.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Tree-4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="will4" fitHeight="66.0" fitWidth="100.0" layoutX="1150.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Knight_with_Rocket.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="will8" fitHeight="84.0" fitWidth="72.0" layoutX="1150.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Will.png" />
          </image>
       </ImageView>
    </children>

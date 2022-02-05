@@ -6,14 +6,14 @@
 
 <AnchorPane fx:id="savedGameAp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@../css/bg.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SavedGames">
    <children>
-      <ImageView fx:id="play" fitHeight="76.0" fitWidth="81.0" layoutX="422.0" layoutY="208.0" onMouseClicked="#resume" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="play" fitHeight="104.0" fitWidth="85.0" layoutX="-100.0" layoutY="272.0" onMouseClicked="#resume" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/Play.png" />
+            <Image url="@../images/cplay.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="newGame" fitHeight="76.0" fitWidth="182.0" layoutX="617.0" layoutY="208.0" onMouseClicked="#generateNewGameButton" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="newGame" fitHeight="89.0" fitWidth="113.0" layoutX="1150.0" layoutY="272.0" onMouseClicked="#generateNewGameButton" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@pic/NewGame.png" />
+            <Image url="@pic/MainMenu.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="138.0" fitWidth="179.0" layoutX="50.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
@@ -26,14 +26,49 @@
             <Image url="@pic/greenIsland5.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="76.0" fitWidth="132.0" layoutX="407.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="76.0" fitWidth="132.0" layoutX="385.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pic/resumelogo.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="76.0" fitWidth="171.0" layoutX="624.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="67.0" fitWidth="131.0" layoutX="603.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pic/newgamelogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="124.0" layoutX="827.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/greenIsland3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="chest" fitHeight="34.0" fitWidth="47.0" layoutX="866.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/pinkchest.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="will" fitHeight="76.0" fitWidth="79.0" layoutX="102.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/Will6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="124.0" layoutX="208.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/greenIsland3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin1" fitHeight="23.0" fitWidth="25.0" layoutX="208.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin2" fitHeight="23.0" fitWidth="25.0" layoutX="259.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/Coin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin3" fitHeight="23.0" fitWidth="25.0" layoutX="303.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/Coin.png" />
          </image>
       </ImageView>
    </children>
